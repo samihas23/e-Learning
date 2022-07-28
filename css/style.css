@@ -1,0 +1,26 @@
+
+/* header styles  */
+/* .carousel-item{
+    background-color: rgba(0, 0, 0, 0.992);
+    opacity: 60%;
+} */
+.carousel-caption{
+    bottom: 122px;
+}
+.carousel-caption h1{
+    font-size: 65px;
+    letter-spacing: 2px;
+}
+.carousel-caption p{
+    margin-top: 20px;
+    font-size: 18px;
+    line-height: 1.9;
+}
+.carousel-caption button{
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+/* courses styles  */
+
