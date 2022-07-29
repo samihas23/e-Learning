@@ -13,59 +13,65 @@
 <body>
     <header class="container">
       <!-- Navbar  -->
-      <nav class="navbar navbar-expand-lg p-3">
-        <div class="container-fluid">
-          <h3>edBase</h3>
-          <div class="collapse navbar-collapse" id="navbarScroll">
-            <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll ps-4" style="--bs-scroll-height: 100px;">
-              <li class="nav-item">
-                <a class="nav-link active text-muted" aria-current="page" href="#">Home</a>
+      <section class="container">
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <h2><a class="navbar-brand" href="#">edBase</a></h2>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active text-muted" aria-current="page" href="#">Courses</a>
+                <a class="nav-link" href="#">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active text-muted" aria-current="page" href="#">Deals</a>
+                <a class="nav-link" href="#">Courses</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active text-muted" aria-current="page" href="#">Success</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active text-muted" aria-current="page" href="#">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active text-muted" aria-current="page" href="#">Contact us</a>
+                <a class="nav-link" href="#">Register</a>
               </li>
             </ul>
             <form class="d-flex" role="search">
-              <button class="btn btn-outline-info" type="submit">Register</button>
+              <button class="btn btn-outline-info my-2 my-sm-0 px-4" type="submit">Search</button>
             </form>
           </div>
-        </div>
-      </nav>   
+        </nav>
+      </section>
       <!-- carousal  -->
       <section class="mt-2 mb-5">
-        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousal">
-          <div class="carousel-inner border rounded-3">
+        <div id="carouselExampleCaptions" class="carousel slide container-fluid" data-bs-ride="false">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
             <div class="carousel-item active">
-              <img src="images/cover/cover-1.png" class="img-oppa d-block w-100" alt="...">
-              <div class="carousel-caption d-none d-md-block">
+              <img src="images/cover/cover-1.png" class="d-block w-100 rounded" alt="...">
+              <div class="carousel-caption d-md-block">
                 <h1>Get Started Digital<br>Learning</h1>
                 <p>It is a long established fact that a reader will be distracted by the readable<br>content of a page when looking at its layout.</p>
                 <button class="btn bg-info px-3 py-3 text-white">Get Started</button>
               </div>
             </div>
             <div class="carousel-item active">
-              <img src="images/cover/cover-3.jpg" class="d-block w-100" alt="...">
-              <div class="carousel-caption d-none d-md-block">
+              <img src="images/cover/cover-3.jpg" class="d-block w-100 rounded" alt="...">
+              <div class="carousel-caption d-md-block">
                 <h1>Get Started Digital<br>Learning</h1>
                 <p>It is a long established fact that a reader will be distracted by the readable<br>content of a page when looking at its layout.</p>
                 <button class="btn bg-info px-3 py-3 text-white">Get Started</button>
               </div>
             </div>
             <div class="carousel-item active">
-              <img src="images/cover/cover-1.png" class="d-block w-100" alt="...">
-              <div class="carousel-caption d-none d-md-block">
+              <img src="images/cover/cover-1.png" class="d-block w-100 rounded" alt="...">
+              <div class="carousel-caption d-md-block">
                 <h1>Get Started Digital<br>Learning</h1>
                 <p>It is a long established fact that a reader will be distracted by the readable<br>content of a page when looking at its layout.</p>
                 <button class="btn bg-info px-3 py-3 text-white">Get Started</button>
@@ -90,12 +96,12 @@
       <h1 class="text-center mb-3">Discover Our Popular<br>Courses</h1>
       <p class="text-center text-muted mb-5">Celebrate 7 years of learning and connection with the most popular courses on edBase.</p>
 
-      <div class="row row-cols-1 row-cols-md-2 g-5">
-        <div class="col">
-          <div class="card" >
+      <div class="row g-2">
+        <div class="col-sm-12 col-md-12 col-lg-6">
+          <div class="card mb-3">
             <div class="row g-0">
               <div class="col-md-4">
-                <img src="images/course/course-1.png" class="img-fluid" alt="...">
+                <img src="images/course/course-1.png" class="img-fluid rounded-start" alt="...">
               </div>
               <div class="col-md-8">
                 <div class="card-body">
@@ -107,7 +113,7 @@
             </div>
           </div>
         </div>
-        <div class="col">
+        <div class="col-sm-12 col-md-12 col-lg-6">
           <div class="card">
             <div class="row g-0">
               <div class="col-md-4">
@@ -123,7 +129,7 @@
             </div>
           </div>
         </div>
-        <div class="col">
+        <div class="col-sm-12 col-md-12 col-lg-6">
           <div class="card">
             <div class="row g-0">
               <div class="col-md-4">
@@ -139,7 +145,7 @@
             </div>
           </div>
         </div>
-        <div class="col">
+        <div class="col-sm-12 col-md-12 col-lg-6">
           <div class="card">
             <div class="row g-0">
               <div class="col-md-4">
@@ -155,7 +161,7 @@
             </div>
           </div>
         </div>
-        <div class="col">
+        <div class="col-sm-12 col-md-12 col-lg-6">
           <div class="card">
             <div class="row g-0">
               <div class="col-md-4">
@@ -171,7 +177,7 @@
             </div>
           </div>
         </div>
-        <div class="col">
+        <div class="col-sm-12 col-md-12 col-lg-6">
           <div class="card mb-3">
             <div class="row g-0">
               <div class="col-md-4">
@@ -197,34 +203,30 @@
     </section>
 
     <!-- register now section  -->
-    <section class="container">
-      <div class="container mt-5 mb-5">
-        <div class="row g-5">
-          <div class="col-lg col-md-6 col-sm-12">
-            <div class="border rounded bg-info d-flex align-items-center justify-content-evenly">
-                <div class="col-6 mt-3 mb-5">
-                  <h1 class="text-white mt-5 mb-4">Ready to join?</h1>
-                  <p class="text-white fs-5">Join us and become the next and best versions of yourself.<br>Come join us!</p>
-                </div>
-                <button type="button" class="border rounded text-info p-3" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Register Now</button>
-                <!-- Modal  -->
-                <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                  <div class="modal-dialog">
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <h5 class="modal-title" id="staticBackdropLabel">Register Now</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                      </div>
-                      <div class="modal-body">
-                        <p>Hello. The site is under construction now. We will be back shortly. In the meantime, please stay tuned with us. Thank you!</p>
-                      </div>
-                      <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-info text-white" data-bs-dismiss="modal">Okay</button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+    <section class="container bg-info border rounded mx-auto my-5 p-5">
+      <div class="row align-items-center justify-content-around">
+        <div class="col-lg-6 col-md-12 col-sm-12">
+          <h1 class="text-white text-center">Ready to join?</h1>
+          <p class="text-white text-center">Join us and become the next and best versions of yourself.<br>Come join us!</p>
+        </div>
+        <div class="col-lg-6 col-md-12 col-sm-12">
+          <h5 class="text-center"><button type="button" class="border rounded text-info px-3 py-2" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Register Now</button></h5>
+        </div>
+        <!-- Modal  -->
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel">Register Now</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <p>Hello. The site is under construction now. We will be back shortly. In the meantime, please stay tuned with us. Thank you!</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-info text-white" data-bs-dismiss="modal">Okay</button>
+              </div>
             </div>
           </div>
         </div>
@@ -232,7 +234,7 @@
     </section>
 
     <!-- FAQ section  -->
-    <section class="container">
+    <section class="container mb-5">
       <div class="row">
         <h1 class="text-center">Frequently Asked Questions</h1>
         <p class="text-center mt-3 text-black-50">It is a long established fact that a reader will be distracted by the readable<br>content of a page when looking at its layout.</p>

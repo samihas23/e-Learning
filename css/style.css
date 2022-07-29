@@ -1,9 +1,4 @@
 
-/* header styles  */
-/* .carousel-inner{
-    background-color: rgba(0, 0, 0, 0.992);
-    opacity: 60%;
-} */
 .carousel-caption{
     bottom: 122px;
 }
@@ -21,8 +16,6 @@
     font-weight: bold;
     margin-top: 30px;
 }
-
-
 
 .social-links a{
     color: white;
